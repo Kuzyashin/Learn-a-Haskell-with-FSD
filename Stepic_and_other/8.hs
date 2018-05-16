@@ -5,7 +5,7 @@ module Fiba where
                 | n > 0 = fibonacci (n - 1) + fibonacci (n - 2)
                 | n < 0 = fibonacci (n + 2) - fibonacci (n + 1)
 
-    fibonacciAcc n = helper 0 1 n           
+    fibonacciAcc n = helper 0 1           
         where helper curr prev n
                 | n == 0   = curr
                 | n > 0    = helper (curr+prev) curr (n-1)

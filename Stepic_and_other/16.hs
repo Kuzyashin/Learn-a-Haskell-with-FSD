@@ -6,7 +6,7 @@ module Calendar where
     data Date = Date Year Month Day
     
     -- Год
-    newtype Year  = Year Int       -- Int это целые числа
+    newtype Year  = Year Int
     
     -- Месяц
     data Month  = January    | February   | March    | April          
